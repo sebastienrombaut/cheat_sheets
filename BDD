@@ -52,7 +52,7 @@ Alors la c’est simple, je n’utilise pas de table intermédiaire.
 Pour mon exemple Velib et Utilisateur. J’aurai deux modeles : `User`et `Bicycle`
 J’ai pas besoin d’une troisième table entre les deux (pas de RDV pour prendre un velo donc pas de table intermédiaire).
 Il faudra executer la ligne de commande suivante:
-`rails g migration CreateJoinTableBicycleUser bicycle user ` (par ordre alphabétique de nom de modele)
+`rails g migration CreateJoinTableBicyclesUsers bicycle user ` (par ordre alphabétique de nom de modele)
 Et après pour rajouter des élements `bicycle_234.users << Mathieu` (le s est important ici car on est dans une relation type N-N)
 Ca signifie que Mathieu à utilisé le velo avec l’ID 234 mais je peux rajouter d’autres instances et j’aurai tout les utilisateurs 
 du Velo 234
